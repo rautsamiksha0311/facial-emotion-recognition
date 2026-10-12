@@ -1,17 +1,13 @@
 # 🎭 Facial Emotion Recognition & Detection
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/TensorFlow-CNN-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
-  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"/>
-  <img src="https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
-</p>
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-CNN-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
-<p align="center">
-  <b>Giving machines the ability to recognize facial expressions — one frame at a time.</b>
-  <br/>
-  A deep learning project that detects faces and classifies visible facial expressions using a Convolutional Neural Network (CNN).
-</p>
+**Giving machines the ability to recognize facial expressions — one frame at a time.**
+
+A deep learning project that detects faces and classifies visible facial expressions using a Convolutional Neural Network (CNN).
 
 ---
 
@@ -59,26 +55,37 @@ What if a computer could recognize a smile, a frown, or a surprised expression?
 ## 🧠 How It Works
 
 ```text
-       📷 Input Image / Camera
-                 |
-                 v
-       🔍 Face Detection (OpenCV)
-                 |
-                 v
-       🖼️ Grayscale & Resize
-              (48 × 48)
-                 |
-                 v
-       🤖 Trained CNN Model
-                 |
-                 v
-       📊 Emotion Probabilities
-                 |
-                 v
-       🎭 Predicted Expression
+📷 Input Image / Camera
+          |
+          v
+🔍 Face Detection (OpenCV)
+          |
+          v
+🖼️ Grayscale & Resize (48 × 48)
+          |
+          v
+🤖 Trained CNN Model
+          |
+          v
+📊 Emotion Probabilities
+          |
+          v
+🎭 Predicted Expression
 ```
 
-**Note:** This is an experimental model and its performance can vary across emotion categories, lighting conditions, face angles, and image quality. The accuracy is a baseline, not production-level performance.
+## 📈 Model Performance
+
+![Test Accuracy](https://img.shields.io/badge/Test%20Accuracy-51.71%25-orange?style=for-the-badge)
+
+| Metric | Result |
+|---|---:|
+| Test accuracy | 51.71% |
+| Test loss | 1.2894 |
+| Input image size | 48 × 48 pixels |
+| Input channels | Grayscale |
+| Output classes | 7 |
+
+**Note:** This is an experimental model. Its performance can vary across emotion categories, lighting conditions, face angles, and image quality. The reported accuracy is a baseline, not production-level performance.
 
 ## 📂 Project Structure
 
@@ -103,14 +110,14 @@ facial-emotion-recognition/
 
 ## ⚙️ Getting Started
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/rautsamiksha0311/facial-emotion-recognition.git
 cd facial-emotion-recognition
 ```
 
-### 2. Create and activate a virtual environment
+### 2. Create a Virtual Environment
 
 **Windows PowerShell:**
 
@@ -119,19 +126,19 @@ python -m venv venv
 .\venv\Scripts\Activate.ps1
 ```
 
-### 3. Install dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Download the dataset
+### 4. Download the Dataset
 
 Download the FER-2013 dataset from Kaggle:
 
-🔗 [FER-2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013)
+🔗 [FER-2013 Dataset — Kaggle](https://www.kaggle.com/datasets/msambare/fer2013)
 
-Arrange it in the following structure:
+Arrange the dataset as follows:
 
 ```text
 dataset/
@@ -147,15 +154,15 @@ dataset/
     └── ...same seven emotion folders
 ```
 
-### 5. Train the model
+### 5. Train the Model
 
 ```bash
 python -m src.train
 ```
 
-The training script saves model checkpoints under `models/`. Ensure the trained model file expected by the application is available before running it.
+The training script saves model checkpoints in the `models/` directory. Make sure the model file expected by the application is available before launching it.
 
-### 6. Launch the application
+### 6. Launch the Application
 
 ```bash
 python -m streamlit run app.py
@@ -175,17 +182,19 @@ Your browser should open the local Streamlit application.
 
 - Facial expressions do not reliably reveal a person's true emotional state.
 - Predictions may be affected by lighting, occlusion, face angle, and image quality.
-- The model may perform differently across people and demographic groups.
-- This project is intended for learning and experimentation, not for consequential decisions about people.
+- Model performance may differ across people and demographic groups.
+- This project is intended for learning and experimentation, not consequential decisions about people.
 
-📧 **Email:** [rautsamiksha0311@gmail.com](mailto:rautsamiksha0311@gmail.com)
+## 👩‍💻 Author
+
+**Samiksha Raut**
+
+📧 **Email:** [rautsamiksha0811@gmail.com](mailto:rautsamiksha0811@gmail.com)
 
 🐙 **GitHub:** [@rautsamiksha0311](https://github.com/rautsamiksha0311)
 
 ---
 
-<p align="center">
-  💜 <b>Built with Python, deep learning, and curiosity.</b>
-  <br/>
-  <i>Exploring the intersection of AI and computer vision.</i>
-</p>
+💜 **Built with Python, deep learning, and curiosity.**
+
+*Exploring the intersection of AI and computer vision.*
