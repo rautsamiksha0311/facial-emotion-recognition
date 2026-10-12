@@ -189,7 +189,7 @@ Your browser should open the local Streamlit application.
 
 **Samiksha Raut**
 
-📧 **Email:** [rautsamiksha0811@gmail.com](mailto:rautsamiksha0811@gmail.com)
+📧 **Email:** [rautsamiksha0311@gmail.com](mailto:rautsamiksha0311@gmail.com)
 
 🐙 **GitHub:** [@rautsamiksha0311](https://github.com/rautsamiksha0311)
 
